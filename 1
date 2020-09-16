@@ -1,0 +1,21 @@
+public class TheDogTest1 {
+public static void main(String[] args) {
+Dog pochi = new Dog();
+pochi.print();
+pochi.roudou();
+pochi.print();
+pochi.roudou();
+pochi.print();
+public void changeState(DogState d) {
+myState = d;
+}
+public void print() {
+System.out.print("現在、わたしは「");
+System.out.print( myState.toString() );
+System.out.println("」です。");
+}
+}
+abstract class DogState {
+public abstract void tukareta(Dog yobidashimoto);
+public abstract void tabeta(Dog yobidashimoto);
+}
